@@ -5,44 +5,38 @@ import java.util.List;
 
 public class Caisse {
 
-	private String nom;
-	private List<Item> items;
+    private String nom;
+    private List<Item> items;
 
-	/** Constructeur
-	 * @param nom
-	 */
-	public Caisse(String nom) {
-		super();
-		this.nom = nom;
-		this.items = new ArrayList<>();
-	}
+    public Caisse(String nom) {
+        this.nom = nom;
+        this.items = new ArrayList<>();
+    }
 
-	/** Getter pour l'attribut nom
-	 * @return the nom
-	 */
-	public String getNom() {
-		return nom;
-	}
+    public String getNom() {
+        return nom;
+    }
 
-	/** Setter pour l'attribut nom
-	 * @param nom the nom to set
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
-	/** Getter pour l'attribut items
-	 * @return the items
-	 */
-	public List<Item> getItems() {
-		return items;
-	}
+    public List<Item> getItems() {
+        return items;
+    }
 
-	/** Setter pour l'attribut items
-	 * @param items the items to set
-	 */
-	public void setItems(List<Item> items) {
-		this.items = items;
-	}
-	
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    // Nouvelle méthode pour ajouter un item à la caisse en fonction de son poids
+    public void ajouterItem(Item item) {
+        if (item.getPoids() < 5) {
+            items.add(item);
+        } else if (item.getPoids() >= 5 && item.getPoids() <= 20) {
+            items.add(item);
+        } else if (item.getPoids() >= 20) {
+            items.add(item);
+        }
+    }
 }

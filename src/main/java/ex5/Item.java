@@ -1,32 +1,46 @@
 package ex5;
 
+/**
+ * Represents an item with a name and weight.
+ */
 public class Item {
 
-	private String nom;
-	private int poids;
-	
-	/** Getter pour l'attribut nom
-	 * @return the nom
-	 */
-	public String getNom() {
-		return nom;
-	}
-	/** Setter pour l'attribut nom
-	 * @param nom the nom to set
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-	/** Getter pour l'attribut poids
-	 * @return the poids
-	 */
-	public int getPoids() {
-		return poids;
-	}
-	/** Setter pour l'attribut poids
-	 * @param poids the poids to set
-	 */
-	public void setPoids(int poids) {
-		this.poids = poids;
-	}
+    private String nom;
+    private int poids;
+
+    /**
+     * Gets the name of the item.
+     *
+     * @return The name of the item.
+     */
+    public String getNom() {
+        return nom;
+    }
+
+    /**
+     * Sets the name of the item.
+     *
+     * @param nom The new name of the item.
+     */
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    /**
+     * Gets the weight of the item.
+     *
+     * @return The weight of the item.
+     */
+    public int getPoids() {
+        return poids;
+    }
+
+    /**
+     * Sets the weight of the item.
+     *
+     * @param poids The new weight of the item.
+     */
+    public void setPoids(int poids) {
+        this.poids = poids;
+    }
 }
